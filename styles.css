@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+    height: 100%;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+.navbar-inner {
+    background-color: transparent;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+.navbar-brand {
+    font-family: 'Libre Barcode 128 Text', 'cursive';
+    font-size: 2em;
+    text-transform: lowercase;
+}
+.navbar-toggler {
+    float: right;
+    margin-top: 2%;
+}
+.btn {
+    color: white!important;
+    border-color: white!important;
+    border-radius: .8em!important;
+}
+.footer {
+    flex-shrink: 0;
+    /* Set the fixed height of the footer here */
+    height: 2em;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: transparent;
+}
+.footer-links {
+    list-style-type: none; 
+    text-align: center;
+}
+.footer-links li {
+    display: inline-block;
+    margin: 3%;
+    color: white;
+    font-family: 'Raleway', 'sans-serif';     
+}
+#homebtn:hover, #aboutbtn:hover, #portfoliobtn:hover, #hiremebtn:hover {
+    background-color: white;
+    color: #0d1c3d!important;
+}
+/* Index Styles */    
+.index-toggler {
+    background-color: #0d1c3d;
+    border-color: white!important;
+}
+.index-content{
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/snowbackground-mobile.jpg");
+    background-repeat: no-repeat;
+    height: 35em;
+    background-size: cover;  
+    background-position: bottom;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex: 1 0 auto;   
+}
+
+.index-heading {
+    visibility: hidden;
+}
+.index-subheading {
+    font-family: 'Raleway', 'sans-serif'; 
+    font-size: 25px; 
+    font-weight:400; 
+    color: #0d1c3d; 
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    margin-top: 85%;      
+}
+/* About Styles */
+.about-content{
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/glowingkeyboard.jpg");
+    background-repeat: no-repeat;
+    height: 40em;
+    background-size: cover;  
+    background-position: bottom;
+    position: relative;
+    color: white;  
+    font-family: 'Raleway', 'sans-serif';
+    margin-top: 5%; 
+}
+#about-btn-home:hover, #about-btn-about:hover, #about-btn-portfolio:hover, #about-btn-hireme:hover {
+    background-color: white;
+    color:black!important;
+}
+.about-toggler {
+    background-color:black!important;
+    border-color: white!important;
+}
+.about-skills-skills, .about-skills-learning {
+    text-align: center;   
+}
+.about-skills-learning ul {
+    list-style-type: none;
+}
+.about-me {
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    width: 80%;
+    margin: 30% auto;
+}
+.about-footer {
+    margin-top: 15%;
+}
+/* portfolio content */
+.portfolio-content{
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/mountainsclouds.jpg");
+    background-repeat: no-repeat;
+    height: 40em;
+    background-size: cover;     
+    position: relative;
+    color: white;  
+    font-family: 'Raleway', 'sans-serif'; 
+}
+.portfolio-toggler {
+    background-color: #0d1c3d;
+    border-color: black!important;
+}
+.portfolio-navbar-inner {
+    background-color: white;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+.portfolio-subheading {
+    font-family: 'Raleway', 'sans-serif'; 
+    font-size:18px; 
+    font-weight:400; 
+    color: #0d1c3d; 
+    text-align: center;
+    padding-top: 2em;
+}
+.portfolio-container {
+    height: 20em;
+    margin: auto;
+    width: 80%;
+}
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+.portfolio-thumb {
+    width: 10em;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+.portfolio-image-text {
+    font-family: 'Raleway', 'sans-serif'; 
+    font-size: 14px;  
+    color: #0d1c3d; 
+    text-align: center;
+}
+.coming-soon-2 {
+    font-family: 'Raleway', 'sans-serif'; 
+    font-size: 14px;  
+    color: white; 
+    text-align: center;
+}
+
+/* Contact Styles */
+.contact-content{
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/ice-floes.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: cover;   
+    background-position: bottom left; 
+}
+.contact-heading {
+    font-family: 'Raleway', 'sans-serif'; 
+    font-weight:300; 
+    color: white; 
+    padding-top: .5em;
+    text-align: center;
+}
+.contactform {
+    width: 80%;
+    margin: 2em auto;
+}
+.form-group {
+    margin: -10px;
+}
+.g-recaptcha {
+    padding: 1em 0;
+}
+
+#button-submit {
+    background-color: #0d1c3d!important;
+}
+
+#button-submit:hover {
+    background-color: white!important;
+    color: #0d1c3d!important;
+}
+
+@media (min-width: 576px) {
+    /* Index 576px */
+    .index-heading {
+    visibility: visible;
+    margin-top: 35%;
+    font-family: 'Libre Barcode 128 Text', 'cursive';
+    color: #0d1c3d;
+    font-size: 300%;
+    }
+    .index-subheading {
+        margin-top: 50%;
+    }
+    /* About 576px */
+    .about-content {
+        font-size: 120%;
+    }
+    .about-me {
+        font-size: 110%;
+    }
+    /* Portfolio 576px */
+    .portfolio-image-text {
+    font-size: 18px;  
+    padding: 1.5em;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Index 768px */
+    .index-content{
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/snowbackground-768.jpg");
+    }
+    .index-heading {
+        margin-top: 20%;
+    } 
+    .index-subheading{
+        font-size: 200%;
+        margin-top: 30%;
+    }
+    /*portfolio 768px */
+    .coming-soon-2 {
+        color: #0d1c3d;
+    }
+}
+
+@media (min-width: 992px) { 
+    /* Index 992px */
+    .index-heading {
+        margin-top: 10%;
+    } 
+    .index-subheading{
+        margin-top: 20%;
+    }
+    /* About 992px */
+    .about-content {
+        font-size: 130%;
+        background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/glowingkeyboard.jpg");
+    }
+    .about-me {
+        margin: 20% auto;
+    }
+    .about-footer {
+    margin-top: 0%;
+    }
+    /* Portfolio 992px */
+    .portfolio-container {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    }
+    .portfolio-subheading {
+        font-size: 24px;
+    }
+    .portfolio-thumb {
+        width: 15em;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Index 1200px */
+    .index-content{
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/snowbackground.jpg");
+    }
+    .index-heading {
+        margin-top: 7%;
+        font-size: 400%;
+    } 
+    .index-subheading{
+        margin-top: 28%;
+    }
+    /* Portfolio 1200px */
+    .portfolio-container {
+    width: 70%;
+    }
+    .portfolio-content{
+    background-position-y: 75%;
+    }
+}
+
