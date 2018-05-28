@@ -181,27 +181,29 @@ body {
 .contact-content{
     background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/ice-floes.jpg");
     background-repeat: no-repeat;
-    height: auto;
+    height: 40em;
     background-size: cover;   
-    background-position: bottom left; 
+    background-position: center ; 
 }
-.contact-heading {
+.contact-heading-top {
     font-family: 'Raleway', 'sans-serif'; 
     font-weight:300; 
     color: white; 
-    padding-top: .5em;
+    padding-top: 3em;
     text-align: center;
-}
-.contactform {
     width: 80%;
-    margin: 2em auto;
+    margin: auto;
 }
-.form-group {
-    margin: -10px;
+.contact-heading-bottom {
+    font-family: 'Raleway', 'sans-serif'; 
+    font-weight:300; 
+    color: white; 
+    padding-top: 12em;
+    text-align: center;
+    width: 80%;
+    margin: auto;
 }
-.g-recaptcha {
-    padding: 1em 0;
-}
+
 
 #button-submit {
     background-color: #0d1c3d!important;
@@ -236,6 +238,10 @@ body {
     font-size: 18px;  
     padding: 1.5em;
     }
+    /* Contact 576 */
+    .contact-heading-bottom {
+    padding-top: 12em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -253,6 +259,13 @@ body {
     /*portfolio 768px */
     .coming-soon-2 {
         color: #0d1c3d;
+    }
+    /* Contact 768 */
+    .contact-heading-top {
+    padding-top: 2em;
+    }
+    .contact-heading-bottom {
+    padding-top: 15em;
     }
 }
 
@@ -287,6 +300,17 @@ body {
     .portfolio-thumb {
         width: 15em;
     }
+    /* Contact 992px */
+    .contact-heading-top {
+    padding-top: 4em;
+    padding-bottom: 1em;
+    }
+    .contact-heading-bottom {
+    padding-top: 0;
+    }
+    .contact-email-link {
+        color: #0d1c3d;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -308,5 +332,9 @@ body {
     .portfolio-content{
     background-position-y: 75%;
     }
+    /* Contact 1200px */
+    .contact-heading-top {
+    padding-top: 3em;
+
 }
 
