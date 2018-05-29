@@ -336,4 +336,11 @@ body {
     .contact-heading-top {
     padding-top: 3em;
     }
+    /* Index 1800px */
+    .index-heading {
+        margin-top: 3%;
+    }
+    .index-subheading {
+        margin-top: 15%;
+    }
 }
