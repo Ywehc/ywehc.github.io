@@ -123,7 +123,8 @@ body {
 }
 /* portfolio content */
 .portfolio-content{
-    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/mountainsclouds.jpg");
+    background-image: url("images/beach-dark.jpg");
+    /* background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/mountainsclouds.jpg"); */
     background-repeat: no-repeat;
     height: 40em;
     background-size: cover;     
@@ -145,7 +146,7 @@ body {
     font-family: 'Raleway', 'sans-serif'; 
     font-size:18px; 
     font-weight:400; 
-    color: #0d1c3d; 
+    color: white; 
     text-align: center;
     padding-top: 2em;
 }
@@ -165,12 +166,6 @@ body {
     border-radius: 10%;
 }
 .portfolio-image-text {
-    font-family: 'Raleway', 'sans-serif'; 
-    font-size: 14px;  
-    color: #0d1c3d; 
-    text-align: center;
-}
-.coming-soon-2 {
     font-family: 'Raleway', 'sans-serif'; 
     font-size: 14px;  
     color: white; 
@@ -237,6 +232,10 @@ body {
     .portfolio-image-text {
     font-size: 18px;  
     padding: 1.5em;
+    }
+    .portfolio-subheading {
+    font-size:24px;
+    padding-top: 1em;
     }
     /* Contact 576 */
     .contact-heading-bottom {
@@ -352,5 +351,5 @@ body {
     }
     .index-subheading {
         margin-top: 15%;
-    }
+}
 }
