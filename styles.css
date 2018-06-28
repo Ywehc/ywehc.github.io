@@ -11,6 +11,7 @@ body {
 }
 .wrapper {
     max-width: 1200px;
+    min-height: 400px;
     margin: auto;
 }
 .navbar-inner {
@@ -122,12 +123,7 @@ body {
     margin-top: 15%;
 }
 /* portfolio content */
-.portfolio-content{
-    background-image: url("ywehc.github.io/Images/beach-dark.jpg");
-    /* background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/mountainsclouds.jpg"); */
-    background-repeat: no-repeat;
-    height: 40em;
-    background-size: cover;     
+.portfolio-content{   
     position: relative;
     color: white;  
     font-family: 'Raleway', 'sans-serif'; 
@@ -142,35 +138,34 @@ body {
     margin-right: 0;
     width: 100%;
 }
+.portfolio-heading {
+    font-family: 'Raleway', 'sans-serif'; 
+    font-size:36px; 
+    font-weight:400; 
+    color: #0d1c3d; 
+    text-align: center;
+    padding-top: 1em;
+}
 .portfolio-subheading {
     font-family: 'Raleway', 'sans-serif'; 
     font-size:18px; 
     font-weight:400; 
-    color: white; 
-    text-align: center;
-    padding-top: 2em;
-}
-.portfolio-container {
-    height: 20em;
-    margin: auto;
-    width: 80%;
-}
-.portfolio-item {
-    display: flex;
-    align-items: center;
-    margin: 1em;
+    color: #0d1c3d; 
 }
 .portfolio-thumb {
-    width: 10em;
-    border: 2px solid white;
-    border-radius: 10%;
+    height: 200px;
+    width: auto;
+    border: 1px solid #0d1c3d;
+    margin: 1em;
+    
 }
-.portfolio-image-text {
-    font-family: 'Raleway', 'sans-serif'; 
-    font-size: 14px;  
-    color: white; 
+.porfolio-content {
+    display: flex;
+    flex-flow: row wrap;   
+    justify-content: center;
     text-align: center;
 }
+
 
 /* Contact Styles */
 .contact-content{
@@ -229,14 +224,6 @@ body {
         font-size: 110%;
     }
     /* Portfolio 576px */
-    .portfolio-image-text {
-    font-size: 18px;  
-    padding: 1.5em;
-    }
-    .portfolio-subheading {
-    font-size:24px;
-    padding-top: 1em;
-    }
     /* Contact 576 */
     .contact-heading-bottom {
     padding-top: 12em;
@@ -256,9 +243,7 @@ body {
         margin-top: 30%;
     }
     /*portfolio 768px */
-    .coming-soon-2 {
-        color: #0d1c3d;
-    }
+
     /* Contact 768 */
     .contact-heading-top {
     padding-top: 2em;
