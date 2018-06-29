@@ -13,6 +13,8 @@ body {
     max-width: 1200px;
     min-height: 400px;
     margin: auto;
+    background-color: white;
+    text-align: center;
 }
 .navbar-inner {
     background-color: transparent;
@@ -32,7 +34,13 @@ body {
 .btn {
     color: white!important;
     border-color: white!important;
-    border-radius: .8em!important;
+    border-radius: 0%;
+}
+.thumbnail-round {
+    border-radius: 50%;
+    border: 3px solid #0d1c3d;
+    width: 200px;
+    margin: 2em;
 }
 .footer {
     flex-shrink: 0;
@@ -88,37 +96,25 @@ body {
 }
 /* About Styles */
 .about-content{
-    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/glowingkeyboard.jpg");
-    background-repeat: no-repeat;
-    height: 40em;
-    background-size: cover;  
-    background-position: bottom;
-    position: relative;
-    color: white;  
+    background-color: white;
+    color: #0d1c3d;  
     font-family: 'Raleway', 'sans-serif';
-    margin-top: 5%; 
+
+    padding: 2em;
 }
 #about-btn-home:hover, #about-btn-about:hover, #about-btn-portfolio:hover, #about-btn-hireme:hover {
     background-color: white;
     color:black!important;
 }
 .about-toggler {
-    background-color:black!important;
     border-color: white!important;
 }
-.about-skills-skills, .about-skills-learning {
-    text-align: center;   
-}
-.about-skills-learning ul {
+
+.skills ul {
     list-style-type: none;
+    text-align: center;
 }
-.about-me {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    width: 80%;
-    margin: 30% auto;
-}
+
 .about-footer {
     margin-top: 15%;
 }
@@ -153,9 +149,9 @@ body {
     color: #0d1c3d; 
 }
 .portfolio-thumb {
-    height: 200px;
+    height: 150px;
     width: auto;
-    border: 1px solid #0d1c3d;
+    border: 2px solid #0d1c3d;
     margin: 1em;
     
 }
@@ -169,31 +165,13 @@ body {
 
 /* Contact Styles */
 .contact-content{
-    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/ice-floes.jpg");
-    background-repeat: no-repeat;
-    height: 40em;
-    background-size: cover;   
-    background-position: center ; 
-}
-.contact-heading-top {
+    background-color: white; 
     font-family: 'Raleway', 'sans-serif'; 
-    font-weight:300; 
-    color: white; 
-    padding-top: 3em;
-    text-align: center;
-    width: 80%;
-    margin: auto;
+    padding: 3em;
 }
-.contact-heading-bottom {
-    font-family: 'Raleway', 'sans-serif'; 
-    font-weight:300; 
-    color: white; 
-    padding-top: 12em;
-    text-align: center;
-    width: 80%;
-    margin: auto;
+.contact-content h1, h2{
+    font-size: 150%; 
 }
-
 
 #button-submit {
     background-color: #0d1c3d!important;
@@ -225,9 +203,6 @@ body {
     }
     /* Portfolio 576px */
     /* Contact 576 */
-    .contact-heading-bottom {
-    padding-top: 12em;
-    }
 }
 
 @media (min-width: 768px) {
@@ -243,14 +218,10 @@ body {
         margin-top: 30%;
     }
     /*portfolio 768px */
-
+    .portfolio-thumb {
+    height: 200px;
+    }
     /* Contact 768 */
-    .contact-heading-top {
-    padding-top: 2em;
-    }
-    .contact-heading-bottom {
-    padding-top: 15em;
-    }
 }
 
 @media (min-width: 992px) { 
@@ -262,10 +233,7 @@ body {
         margin-top: 20%;
     }
     /* About 992px */
-    .about-content {
-        font-size: 130%;
-        background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/glowingkeyboard.jpg");
-    }
+
     .about-me {
         margin: 20% auto;
     }
@@ -285,13 +253,6 @@ body {
         width: 15em;
     }
     /* Contact 992px */
-    .contact-heading-top {
-    padding-top: 4em;
-    padding-bottom: 1em;
-    }
-    .contact-heading-bottom {
-    padding-top: 0;
-    }
     .contact-email-link {
         color: #0d1c3d;
     }
@@ -317,9 +278,7 @@ body {
     background-position-y: 75%;
     }
     /* Contact 1200px */
-    .contact-heading-top {
-    padding-top: 3em;
-    }
+
     /* Index 1800px 
     .index-heading {
         margin-top: 3%;
