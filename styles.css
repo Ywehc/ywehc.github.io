@@ -76,23 +76,28 @@ body {
     background-position: bottom;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    flex: 1 0 auto;   
+    flex: 1 0 auto;  
+}    
+.index-heading {
+    font-family: 'Libre Barcode 128 Text', 'cursive'; 
+    font-size: 50px;  
+    color: white; 
+    text-align: center; 
+    margin-top: 50px;
 }
 
-.index-heading {
-    visibility: hidden;
-}
 .index-subheading {
     font-family: 'Raleway', 'sans-serif'; 
     font-size: 25px; 
     font-weight:400; 
     color: #0d1c3d; 
     width: 70%;
+    margin: auto;
     text-align: center;
-    position: absolute;
-    margin-top: 85%;      
+    margin-top: 50%;         
 }
 /* About Styles */
 .about-content{
@@ -185,14 +190,13 @@ body {
 @media (min-width: 576px) {
     /* Index 576px */
     .index-heading {
-    visibility: visible;
     margin-top: 35%;
     font-family: 'Libre Barcode 128 Text', 'cursive';
     color: #0d1c3d;
-    font-size: 300%;
+    font-size: 350%;
     }
     .index-subheading {
-        margin-top: 50%;
+        margin-top: 5%;
     }
     /* About 576px */
     .about-content {
@@ -214,8 +218,8 @@ body {
         margin-top: 20%;
     } 
     .index-subheading{
-        font-size: 200%;
-        margin-top: 30%;
+        font-size: 150%;
+        margin-top: 5;
     }
     /*portfolio 768px */
     .portfolio-thumb {
@@ -230,7 +234,7 @@ body {
         margin-top: 10%;
     } 
     .index-subheading{
-        margin-top: 20%;
+        margin-top: 5%;
     }
     /* About 992px */
 
@@ -264,11 +268,12 @@ body {
     background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/snowbackground.jpg");
     }
     .index-heading {
-        margin-top: 7%;
-        font-size: 400%;
+        margin-top: 10%;
+        font-size: 500%;
     } 
     .index-subheading{
-        margin-top: 28%;
+        margin-top: 10%;
+        font-size: 225%;
     }
     /* Portfolio 1200px */
     .portfolio-container {
@@ -279,21 +284,15 @@ body {
     }
     /* Contact 1200px */
 
-    /* Index 1800px 
+@media (min-width: 1500px) {
+    /* Index 1500px */
     .index-heading {
-        margin-top: 3%;
+        margin-top: 4em;
     }
     .index-subheading {
-        margin-top: 15%;
+        margin-top: 0;
     }
-    */
 }
 @media (min-width: 1800px) {
     /* Index 1800px */
-    .index-heading {
-        margin-top: 3%;
-    }
-    .index-subheading {
-        margin-top: 15%;
-}
 }
