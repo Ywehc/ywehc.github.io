@@ -69,7 +69,7 @@ body {
     border-color: white!important;
 }
 .index-content{
-    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/snowbackground-mobile.jpg");
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground-mobile.jpg");
     background-repeat: no-repeat;
     height: 35em;
     background-size: cover;  
@@ -212,7 +212,7 @@ body {
 @media (min-width: 768px) {
     /* Index 768px */
     .index-content{
-    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/snowbackground-768.jpg");
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground-768.jpg");
     }
     .index-heading {
         margin-top: 20%;
@@ -265,7 +265,7 @@ body {
 @media (min-width: 1200px) {
     /* Index 1200px */
     .index-content{
-    background-image: url("https://s3.amazonaws.com/chriskieran.com/Images/snowbackground.jpg");
+    background-image: url("https://s3.amazonaws.com/chriskieran.com/assets/images/snowbackground.jpg");
     }
     .index-heading {
         margin-top: 10%;
@@ -292,7 +292,8 @@ body {
     .index-subheading {
         margin-top: 0;
     }
-}
 @media (min-width: 1800px) {
     /* Index 1800px */
+    }
 }
+
